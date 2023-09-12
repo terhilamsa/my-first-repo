@@ -45,8 +45,8 @@ def price_calculator(total_amount):
         discount = get_discount_rate(taxed_amount)
         discount_amount = taxed_amount * (discount / 100)
         discounted_amount = taxed_amount-discount_amount
-        print(discount, "is the discount percentage.")
-        print(discount_amount, " is the discount amount.")
+        print(f"{discount:.2f} is the discount percentage.")
+        print(f"{discount_amount:.2f} is the discount amount.")
 
         print(f"{discounted_amount:.2f} is the discounted total price.")
     
